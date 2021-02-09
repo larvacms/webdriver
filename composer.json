@@ -1,0 +1,40 @@
+{
+    "name": "larvacms/webdriver",
+    "description": "LarvaCMS webdriver provides simple end-to-end browser automation.",
+    "keywords": ["laravel", "webview", "webdriver"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2|^8.0",
+        "ext-json": "*",
+        "ext-zip": "*",
+        "php-webdriver/webdriver": "^1.9.0",
+        "illuminate/console": "^6.0 || ^7.0 || ^8.0",
+        "illuminate/support": "^6.0 || ^7.0 || ^8.0",
+        "symfony/console": "^4.3 || ^5.0",
+        "symfony/finder": "^4.3 || ^5.0",
+        "symfony/process": "^4.3 || ^5.0"
+    },
+    "suggest": {
+        "ext-pcntl": "Used to gracefully terminate Dusk when tests are running."
+    },
+    "autoload": {
+        "psr-4": {
+            "LarvaCMS\\WebDriver\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "LarvaCMS\\WebDriver\\WebDriverServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
